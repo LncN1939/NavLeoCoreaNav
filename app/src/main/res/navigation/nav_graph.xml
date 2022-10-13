@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ni.edu.uca.navleocorea.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ni.edu.uca.navleocorea.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_ktoMFragment"
+            app:destination="@id/ktoMFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_elevadoFragment"
+            app:destination="@id/elevadoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cuadradoFragment"
+            app:destination="@id/cuadradoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ktoMFragment"
+        android:name="ni.edu.uca.navleocorea.KtoMFragment"
+        android:label="fragment_kto_m"
+        tools:layout="@layout/fragment_kto_m" />
+    <fragment
+        android:id="@+id/elevadoFragment"
+        android:name="ni.edu.uca.navleocorea.ElevadoFragment"
+        android:label="fragment_elevado"
+        tools:layout="@layout/fragment_elevado" />
+    <fragment
+        android:id="@+id/cuadradoFragment"
+        android:name="ni.edu.uca.navleocorea.CuadradoFragment"
+        android:label="fragment_cuadrado"
+        tools:layout="@layout/fragment_cuadrado" />
+</navigation>
